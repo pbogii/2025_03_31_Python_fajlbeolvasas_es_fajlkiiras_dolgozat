@@ -71,8 +71,8 @@ for ember in f1emberek:
     csak_futamok.append(ember['futamok'])
 
 atlag_futam = sum(csak_futamok) / len(csak_futamok)
+kerekitett_a_f = round(atlag_futam, 2)
 
-print(f"5. Az átlagos futamszám: {atlag_futam}")
+print(f"5. Az átlagos futamszám: {kerekitett_a_f}")
 
 
-print("***A legtöbb futamgyőzelmet szerző csapat: ____")
