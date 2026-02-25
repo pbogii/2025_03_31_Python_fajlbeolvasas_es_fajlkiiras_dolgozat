@@ -76,3 +76,142 @@ kerekitett_a_f = round(atlag_futam, 2)
 print(f"5. Az átlagos futamszám: {kerekitett_a_f}")
 
 
+#szorgalmi feladat
+sumok = []
+
+nevuk_f = []
+csapat_f= []
+szamolo_f = []
+for ember in f1emberek:
+    if ember['csapat'] == 'Ferrari':
+        csapat_f.append(ember['gyozelmek'])
+szamolo_f.append(sum(csapat_f))
+nevuk_f.append(ember['csapat'])
+sumok.append(szamolo_f)
+
+
+nevuk_ml = []
+csapat_ml= []
+szamolo_ml = []
+for ember in f1emberek:
+    if ember['csapat'] == 'McLaren':
+        csapat_ml.append(ember['gyozelmek'])
+szamolo_ml.append(sum(csapat_ml))
+nevuk_ml.append(ember['csapat'])
+sumok.append(szamolo_ml)
+
+nevuk_r = []
+csapat_r= []
+szamolo_r = []
+for ember in f1emberek:
+    if ember['csapat'] == 'Renault':
+        csapat_r.append(ember['gyozelmek'])
+szamolo_r.append(sum(csapat_r))
+nevuk_r.append(ember['csapat'])
+sumok.append(szamolo_r)
+
+nevuk_m = []
+csapat_m= []
+szamolo_m = []
+for ember in f1emberek:
+    if ember['csapat'] == 'Mercedes':
+        csapat_m.append(ember['gyozelmek'])
+szamolo_m.append(sum(csapat_m))
+nevuk_m.append(ember['csapat'])
+sumok.append(szamolo_m)
+
+nevuk_w = []
+csapat_w= []
+szamolo_w = []
+for ember in f1emberek:
+    if ember['csapat'] == 'Williams':
+        csapat_w.append(ember['gyozelmek'])
+szamolo_w.append(sum(csapat_w))
+nevuk_w.append(ember['csapat'])
+sumok.append(szamolo_w)
+
+nevuk_bgp = []
+csapat_bgp= []
+szamolo_bgp = []
+for ember in f1emberek:
+    if ember['csapat'] == 'Brawn GP':
+        csapat_bgp.append(ember['gyozelmek'])
+szamolo_bgp.append(sum(csapat_bgp))
+nevuk_bgp.append(ember['csapat'])
+sumok.append(szamolo_bgp)
+
+
+nevuk_rb = []
+csapat_rb= []
+szamolo_rb = []
+for ember in f1emberek:
+    if ember['csapat'] == 'Red Bull':
+        csapat_rb.append(ember['gyozelmek'])
+szamolo_rb.append(sum(csapat_rb))
+nevuk_rb.append(ember['csapat'])
+sumok.append(szamolo_rb)
+
+nevuk_b = []
+csapat_b= []
+szamolo_b = []
+for ember in f1emberek:
+    if ember['csapat'] == 'Brabham':
+        csapat_b.append(ember['gyozelmek'])
+szamolo_b.append(sum(csapat_b))
+nevuk_b.append(ember['csapat'])
+sumok.append(szamolo_b)
+
+nevuk_t = []
+csapat_t = []
+szamolo_t = []
+for ember in f1emberek:
+    if ember['csapat'] == 'Tyrrell':
+        csapat_t.append(ember['gyozelmek'])
+szamolo_t.append(sum(csapat_t))
+nevuk_t.append(ember['csapat'])
+sumok.append(szamolo_t)
+
+nevuk_l = []
+csapat_l= []
+szamolo_l = []
+for ember in f1emberek:
+    if ember['csapat'] == 'Lotus':
+        csapat_l.append(ember['gyozelmek'])
+szamolo_l.append(sum(csapat_l))
+nevuk_l.append(ember['csapat'])
+sumok.append(szamolo_l)
+
+
+legtobb_csap = max(sumok)
+
+
+if szamolo_f == legtobb_csap:
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_f}") 
+
+if szamolo_ml == legtobb_csap:
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_ml}")
+
+if szamolo_r == legtobb_csap:
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_r}")
+
+if szamolo_m == legtobb_csap:
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_m}")
+
+if szamolo_w == legtobb_csap:
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_w}")
+
+if szamolo_bgp == legtobb_csap:
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_bgp}")
+
+if szamolo_rb == legtobb_csap:
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_rb}")
+
+if szamolo_b == legtobb_csap:
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_b}")
+
+if szamolo_t == legtobb_csap:
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_t}")
+
+if szamolo_l == legtobb_csap: 
+    print(f"***A legtöbb futamgyőzelmet szerző csapat: {nevuk_l}")
+    
